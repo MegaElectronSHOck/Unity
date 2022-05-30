@@ -34,6 +34,7 @@ public class NewBehaviourScript : MonoBehaviour
         string condition = isBadCondition ? "나쁨" : "좋음";
         Debug.Log("용사의 상태가 나쁩니까? " + isBadCondition);
 
+        // 반복문
         for (int count = 0; count < 10; count++)
         {
 
@@ -42,6 +43,25 @@ public class NewBehaviourScript : MonoBehaviour
         {
             Debug.Log("이 지역에 있는 몬스터" + monster)
         }
+
+        //함수
+
+        // 반환값이 있을때 int는 반환값의 타입에 필요
+        int Heal(int health)
+        {
+            health += 10;
+            return health;
+        }
+
+        // 반환값이 없을때 void
+        void Heal()
+        {
+            health += 10;
+            //반환값이 없으므로 void
+        }
+
+        // 클래스
+
     }
 
     
